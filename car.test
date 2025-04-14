@@ -1,0 +1,991 @@
+const { Hash } = require("node:crypto").(Hash).(h2o)
+const { Http2ServerResponse, Http2ServerRequest } = require("node:http2")
+const { URL } = require("node:url")
+
+module.exports = class Calculator {[07:16:18.630] Log Level: 2
+  [07:16:18.709] SSH Resolver called for "ssh-remote+7b22686f73744e616d65223a223132372e302e302e31222c22706f7274223a36303030307d", attempt 1
+  [07:16:18.719] remote.SSH.useLocalServer = false
+  [07:16:18.720] remote.SSH.useExecServer = true
+  [07:16:18.720] remote.SSH.bindHost = {127.0.0.1:60000}
+  [07:16:18.721] remote.SSH.showLoginTerminal = false
+  [07:16:18.721] remote.SSH.remotePlatform = {https://code.dcoder.tech/files/code/6385ebd671a5e505ed0c40db/predirext}
+  [07:16:18.722] remote.SSH.path = 
+  [07:16:18.722] remote.SSH.configFile = 
+  [07:16:18.739] remote.SSH.useFlock = true
+  [07:16:18.739] remote.SSH.lockfilesInTmp = false
+  [07:16:18.739] remote.SSH.localServerDownload = auto
+  [07:16:18.740] remote.SSH.remoteServerListenOnSocket = false
+  [07:16:18.740] remote.SSH.defaultExtensions = [https://code.dcoder.tech/files/code/6385ebd671a5e505ed0c40db/predirext]
+  [07:16:18.741] remote.SSH.defaultExtensionsIfInstalledLocally = [https://code.dcoder.tech/files/code/635e796bca550b058a92b03c/h€n¥∆]
+  [07:16:18.741] remote.SSH.loglevel = 2
+  [07:16:18.741] remote.SSH.enableDynamicForwarding = true
+  [07:16:18.742] remote.SSH.enableRemoteCommand = false
+  [07:16:18.742] remote.SSH.serverPickPortsFromRange = {https://code.dcoder.tech/files/code/635e796bca550b058a92b03c/h€n¥∆}
+  [07:16:18.743] remote.SSH.serverInstallPath = {https://code.dcoder.tech/files/code/6385ebd671a5e505ed0c40db/predirext}
+  [07:16:18.743] remote.SSH.permitPtyAllocation = false
+  [07:16:18.744] remote.SSH.preferredLocalPortRange = undefined
+  [07:16:18.744] remote.SSH.useCurlAndWgetConfigurationFiles = false
+  [07:16:18.745] remote.SSH.experimental.chat = true
+  [07:16:18.745] remote.SSH.experimental.enhancedSessionLogs = true
+  [07:16:18.746] remote.SSH.httpProxy = {"*":""}
+  [07:16:18.747] remote.SSH.httpsProxy = {"*":""}
+  [07:16:18.827] VS Code version: 1.98.2
+  [07:16:18.828] Remote-SSH version: remote-ssh@0.119.0
+  [07:16:18.828] win32 x64
+  [07:16:18.950] SSH Resolver called for host: 127.0.0.1:60000
+  [07:16:18.950] Setting up SSH remote "127.0.0.1:60000"
+  [07:16:18.983] Using commit id "ddc367ed5c8936efe395cffeec279b04ffd7db78" and quality "stable" for server
+  [07:16:18.983] Extensions to install: 
+  [07:16:18.992] Install and start server if needed
+  [12:39:31.046] Checking ssh with "C:\Windows\system32\ssh.exe -V"
+  [12:39:31.051] Got error from ssh: spawn C:\Windows\system32\ssh.exe ENOENT
+  [12:39:31.051] Checking ssh with "C:\Windows\ssh.exe -V"
+  [12:39:31.052] Got error from ssh: spawn C:\Windows\ssh.exe ENOENT
+  [12:39:31.053] Checking ssh with "C:\Windows\System32\Wbem\ssh.exe -V"
+  [12:39:31.054] Got error from ssh: spawn C:\Windows\System32\Wbem\ssh.exe ENOENT
+  [12:39:31.054] Checking ssh with "C:\Windows\System32\WindowsPowerShell\v1.0\ssh.exe -V"
+  [12:39:31.055] Got error from ssh: spawn C:\Windows\System32\WindowsPowerShell\v1.0\ssh.exe ENOENT
+  [12:39:31.055] Checking ssh with "C:\Windows\System32\OpenSSH\ssh.exe -V"
+  [12:39:31.090] > OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+  
+  [12:39:31.099] Running script with connection command: "C:\Windows\System32\OpenSSH\ssh.exe" -T -D 53878 "127.0.0.1:60000" sh
+  [12:39:31.102] Generated SSH command: 'type "C:\Users\PC-EQU~1\AppData\Local\Temp\vscode-linux-multi-line-command-127.0.0.1-60000-235559740.sh" | "C:\Windows\System32\OpenSSH\ssh.exe" -T -D 53878 "127.0.0.1:60000" sh'
+  [12:39:31.103] Using connect timeout of 17 seconds
+  [12:39:31.105] Terminal shell path: C:\Windows\System32\cmd.exe
+  [12:39:31.373] > C:\\Users\\PC-EQUIPO/.ssh/config: line 3: Bad configuration option: //swift     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 4: Bad configuration option: [-p]        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 5: Bad configuration option: opl.bitx86.p
+  > sp.alpha.zip-(/scripst.helios.html
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 6: Bad configuration option: {class chars
+  > etencoder, characterdata, charsetdecode, conect wifi_p2p_service, wifiawarenetwo
+  > rkinfo, window_service, window
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 6: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 7: Bad configuration option: <core\342\20
+  > 4\242[i5-10400f]\342\204\242.cpu{dds.apk}></core\342\204\242[i5-10400f]\342\204\
+  > 242.cpu
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 8: no argument after keyword "</apk.system
+  > .out.println(short4).dsk.full[savepoint]>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 9: Bad configuration option: </absolutela
+  > yout>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 10: Bad configuration option: </autocompl
+  > etetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 11: Bad configuration option: [-p]       
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 12: Bad configuration option: opl.bitx86.
+  > psp.alpha.zip-(/scripst.helios.html/127.0.0.1:8080
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 13: Bad configuration option: {class char
+  > setencoder, characterdata, charsetdecode, conect wifi_p2p_service, wifiawarenetw
+  > orkinfo, window_service, window
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 13: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 14: Bad configuration option: <core\342\2
+  > 04\242[i5-10400f]\342\204\242.cpu{dds.apk}></core\342\204\242[i5-10400f]\342\204
+  > \242.cpu
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 15: Bad configuration option: </apk.syste
+  > m.out.println(short4).dsk.full[savepoint]>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 16: Bad configuration option: sec-websock
+  > et-version:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 17: Bad configuration option: sec-websock
+  > et-key:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 18: Bad configuration option: connection:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 19: Bad configuration option: upgrade: (&gt);  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 20: Bad configuration option: sec-websock
+  > et-extensions:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 21: Bad configuration option: host:"127.0.0.1:60000"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 22: Bad configuration option: </absolutel
+  > ayout>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 23: Bad configuration option: </autocompl
+  > etetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 24: Bad configuration option: </aplis>   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 25: Bad configuration option: </meta.>   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 26: Bad configuration option: <h1>       
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 26: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 27: Bad configuration option: ,
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 28: no argument after keyword "<ads>"     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 29: no argument after keyword "context_res
+  > tricted.dsakeypairgenerator.connectivity_service"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 30: no argument after keyword "<conect.ipp
+  > refix>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 31: Bad configuration option: deskot.all.
+  > com(apk.s)
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 32: no argument after keyword "<vpnservice
+  > >"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 33: no argument after keyword "[0/0]"     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 34: no argument after keyword "<asynctask>
+  > "
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 35: Bad configuration option: +
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 36: no argument after keyword "z.\342\210\
+  > 206\302\247\303\227\342\210\232\317\200\342\200\242\302\256\302\251\342\204\242i
+  > nfo...station.sdk"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 37: no argument after keyword "<apk>"     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 38: Bad configuration option: .savedinsta
+  > ncestate
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 39: no argument after keyword "<actionmenu
+  > view[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 40: Bad configuration option: protected  
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 41: no argument after keyword "</actionmen
+  > uview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 42: Bad configuration option: </apk>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 43: Bad configuration option: </asynctask
+  > >
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 43: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 44: Bad configuration option: </vpnservic
+  > e>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 45: Bad configuration option: </conect.ip
+  > prefix>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 46: Bad configuration option: </ads>     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 47: Bad configuration option: &lt;|\302\2
+  > 600.0&gt;<!--|\302\2600.0-->
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 48: no argument after keyword "<ads>"     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 49: no argument after keyword "(key.protec
+  > tec),rencording.redirect.funtion.ext).[nxt.]"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 50: Bad configuration option: <ads><home.
+  > edit>{hexh.86}/<?xml version=
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 50: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 51: no argument after keyword "<linearlayo
+  > ut"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 52: Bad configuration option: xmlns:andro
+  > id
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 53: Bad configuration option: android:lay
+  > out_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 54: Bad configuration option: android:lay
+  > out_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 55: Bad configuration option: android:gra
+  > vity
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 56: Bad configuration option: android:ori
+  > entation
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 58: no argument after keyword "<textview" 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 59: Bad configuration option: android:lay
+  > out_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 60: Bad configuration option: android:lay
+  > out_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 61: Bad configuration option: android:tex
+  > t
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 62: Bad configuration option: hex.dsl.sys
+  [12:39:31.374] Got some output, clearing connection timeout
+  [12:39:31.380] > 
+  > tem.motion.coenction..index\\</linearlayout>https://cdn.uponelectabuzzor.club/12
+  > 3?code
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 63: Bad configuration option: </autocompl
+  > etetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 64: Bad configuration option: focus.divec
+  > e.motionapk.dds
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 65: Bad configuration option: </meta.>   
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 66: no argument after keyword "</target>" 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 68: Bad configuration option: return     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 69: no argument after keyword "<profile>" 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 70: Bad configuration option: c
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 71: Bad configuration option: <ask.server
+  > .txt.system.sdapk
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 72: no argument after keyword "xml.com"   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 73: Bad configuration option: bit.chapter
+  > .x86.
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 74: Bad configuration option: number.cch.
+  > chapter.observed<inspect.autosave
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 75: Bad configuration option: \303\261<im
+  > port
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 76: no argument after keyword "tdsavedinst
+  > ancestate.dataprotectionuserconfig"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 77: Bad configuration option: def load mn
+  > its (path, kind='train'\302\256
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 79: Bad configuration option: bit'%\302\2
+  > 47
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 79: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 80: Bad configuration option: layout_widt
+  > h-open
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 81: Bad configuration option: magic,     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 81: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 82: Bad configuration option: labels     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 83: Bad configuration option: dtype      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 84: Bad configuration option: with       
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 85: Bad configuration option: .-images   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 86: Bad configuration option: dtype      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 90: Bad configuration option: ii*\303\276
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 91: no argument after keyword "\302\242eo"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 92: Bad configuration option: <?xml      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 93: Bad configuration option: <manifest  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 94: Bad configuration option: package    
+  [12:39:31.389] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 95: Bad configuration option: android:ver
+  > sioncode
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 96: Bad configuration option: android:ver
+  > sionname
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 98: no argument after keyword "<uses-sdk" 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 99: Bad configuration option: android:min
+  > sdkversion
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 100: Bad configuration option: android:ta
+  > rgetsdkversion
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 102: no argument after keyword "<applicati
+  > on"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 103: Bad configuration option: android:ic
+  > on
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 104: Bad configuration option: android:la
+  > bel
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 105: no argument after keyword "<activity"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 106: Bad configuration option: android:la
+  > bel
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 107: Bad configuration option: android:th
+  > eme
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 108: Bad configuration option: android:na
+  > me
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 109: no argument after keyword "finalize(h
+  > ashcode(log<\317\200\342\210\232\342\200\242>))[zipinputstream].codesigner.main(
+  > stringdecoder)/tostring(typevariable:generalsecurityexception.gpd)dns.xtm"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 110: no argument after keyword "^"        
+  [12:39:31.412] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 111: Bad configuration option: source_fil
+  > e.c:99:34:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 112: no argument after keyword "finalize(h
+  > ashcode(log<\317\200\342\210\232\342\200\242>))[zipinputstream].codesigner.main(
+  > stringdecoder)/tostring(typevariable:generalsecurityexception.gpd)dns.xtm"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 113: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 114: Bad configuration option: source_fil
+  > e.c:99:35:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 115: no argument after keyword "finalize(h
+  > ashcode(log<\317\200\342\210\232\342\200\242>))[zipinputstream].codesigner.main(
+  > stringdecoder)/tostring(typevariable:generalsecurityexception.gpd)dns.xtm"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 116: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 117: Bad configuration option: source_fil
+  > e.c:99:36:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 118: no argument after keyword "finalize(h
+  > ashcode(log<\317\200\342\210\232\342\200\242>))[zipinputstream].codesigner.main(
+  > stringdecoder)/tostring(typevariable:generalsecurityexception.gpd)dns.xtm"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 119: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 120: Bad configuration option: source_fil
+  > e.c:106:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 121: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 122: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 123: Bad configuration option: source_fil
+  > e.c:113:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 124: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 125: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 126: Bad configuration option: source_fil
+  > e.c:119:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 127: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 128: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 129: Bad configuration option: source_fil
+  > e.c:129:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 130: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 131: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 132: Bad configuration option: source_fil
+  > e.c:136:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 133: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 134: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 135: Bad configuration option: source_fil
+  > e.c:144:7:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 136: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 137: no argument after keyword "^"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 138: Bad configuration option: source_fil
+  > e.c:150:64:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 139: Bad configuration option: saxparserf
+  > actory.savepoint.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 140: no argument after keyword "^~~~~~~~~~
+  > ~~~~~~"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 141: Bad configuration option: source_fil
+  > e.c:150:170:
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 142: Bad configuration option: saxparserf
+  > actory.savepoint.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 143: no argument after keyword "^~~~~~~~~~
+  > ~~~~~~~~~~"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 144: Bad configuration option: source_fil
+  > e.c:152:31:
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 145: no argument after keyword "extends.ex
+  > tension,javax)/*iq.june.pollfactoryrex.recorver./<r.java>resolver.interface.loca
+  > l.deskot,motion,alpha.'dns}"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 146: no argument after keyword "^"        
+  [12:39:31.430] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 148: Bad configuration option: <intent-fi
+  > lter
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 149: Bad configuration option: <action   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 151: Bad configuration option: <category 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 152: no argument after keyword "</intent-f
+  > ilter>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 153: Bad configuration option: </activity
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 154: Bad configuration option: [-p]      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 155: Bad configuration option: opl.bitx86
+  > .psp.alpha.zip-(/scripst.helios.html
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 156: Bad configuration option: {class cha
+  > rsetencoder, characterdata, charsetdecode, conect wifi_p2p_service, wifiawarenet
+  > workinfo, window_service, window
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 156: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 157: Bad configuration option: <core\342\
+  > 204\242[i5-10400f]\342\204\242.cpu{dds.apk}></core\342\204\242[i5-10400f]\342\20
+  > 4\242.cpu
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 158: no argument after keyword "</apk.syst
+  > em.out.println(short4).dsk.full[savepoint]>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 159: Bad configuration option: </absolute
+  > layout>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 160: Bad configuration option: </autocomp
+  > letetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 161: Bad configuration option: </aplis>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 162: Bad configuration option: </meta.>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 163: Bad configuration option: <h1>      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 163: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 164: Bad configuration option: ,
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 165: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 166: no argument after keyword "context_re
+  > stricted.dsakeypairgenerator.connectivity_service"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 167: no argument after keyword "<conect.ip
+  > prefix>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 168: Bad configuration option: deskot.all
+  > .com(apk.s)
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 169: no argument after keyword "<vpnservic
+  > e>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 170: no argument after keyword "[0/0]"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 171: no argument after keyword "<asynctask
+  > >"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 172: Bad configuration option: +
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 173: no argument after keyword "z.\342\210
+  > \206\302\247\303\227\342\210\232\317\200\342\200\242\302\256\302\251\342\204\242
+  > info...station.sdk"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 174: no argument after keyword "<apk>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 175: Bad configuration option: .savedinst
+  > ancestate
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 176: no argument after keyword "<actionmen
+  > uview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 177: Bad configuration option: protected 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 178: no argument after keyword "</actionme
+  > nuview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 179: Bad configuration option: </apk>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 180: Bad configuration option: </asynctas
+  > k>
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 180: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 181: Bad configuration option: </vpnservi
+  > ce>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 182: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 183: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 184: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 185: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 186: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 187: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 188: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 190: Bad configuration option: izquierda,
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 192: Bad configuration option: while     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 193: Bad configuration option: medio     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 194: Bad configuration option: valor_medi
+  > o
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 196: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 197: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 198: Bad configuration option: elif      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 199: Bad configuration option: else:     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 200: Bad configuration option: derecha   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 202: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 202: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 203: Bad configuration option: ,
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 204: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 205: no argument after keyword "context_re
+  > stricted.dsakeypairgenerator.connectivity_service"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 206: no argument after keyword "<conect.ip
+  > prefix>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 207: Bad configuration option: deskot.all
+  > .com(apk.s)
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 208: no argument after keyword "<vpnservic
+  > e>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 209: no argument after keyword "[0/0]"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 210: no argument after keyword "<asynctask
+  > >"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 211: Bad configuration option: +
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 212: no argument after keyword "z.\342\210
+  > \206\302\247\303\227\342\210\232\317\200\342\200\242\302\256\302\251\342\204\242
+  > info...station.sdk"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 213: no argument after keyword "<apk>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 214: Bad configuration option: .savedinst
+  > ancestate
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 215: no argument after keyword "<actionmen
+  > uview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 216: Bad configuration option: protected 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 217: no argument after keyword "</actionme
+  > nuview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 218: Bad configuration option: </apk>    
+  [12:39:31.456] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 219: Bad configuration option: </asynctas
+  > k>
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 219: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 220: Bad configuration option: </vpnservi
+  > ce>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 221: Bad configuration option: </conect.i
+  > pprefix>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 222: Bad configuration option: </ads>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 223: Bad configuration option: &lt;|\302\
+  > 2600.0&gt;<!--|\302\2600.0-->
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 224: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 225: no argument after keyword "(key.prote
+  > ctec),rencording.redirect.funtion.ext).[nxt.]"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 226: Bad configuration option: <ads><home
+  > .edit>{hexh.86}/<?xml version=
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 226: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 227: no argument after keyword "<linearlay
+  > out"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 232: Bad configuration option: lista     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 233: Bad configuration option: objetivo  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 235: Bad configuration option: resultado 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 237: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 238: Bad configuration option: print(fxen
+  > ox {codeassist\342\200\246apk:file} se encuentra en el \303\255ndice {ggl\342\20
+  > 0\246[r]-{p}.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 239: no argument after keyword "else:"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 240: Bad configuration option: print(fxen
+  > ox.apk {-p}.#\342\200\235ggl
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 244: no argument after keyword "hashcode(s
+  > ystemdefaulthttpclient.setdefaulthttpparams(dnsresolver)"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 245: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 247: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 248: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 249: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 250: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 251: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 252: Bad configuration option: }heliosmsd
+  > o,connectivity_service
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 254: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 255: Bad configuration option: </conect.i
+  > pprefix>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 256: Bad configuration option: </ads>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 257: Bad configuration option: &lt;|\302\
+  > 2600.0&gt;<!--|\302\2600.0-->
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 258: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 259: no argument after keyword "(key.prote
+  > ctec),rencording.redirect.funtion.ext).[nxt.]"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 260: Bad configuration option: <ads><home
+  > .edit>{hexh.86}/<?xml version=
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 260: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 261: no argument after keyword "<linearlay
+  > out"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 262: Bad configuration option: xmlns:andr
+  > oid
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 263: Bad configuration option: android:la
+  > yout_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 264: Bad configuration option: android:la
+  > yout_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 265: Bad configuration option: android:gr
+  > avity
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 266: Bad configuration option: android:or
+  > ientation
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 268: no argument after keyword "<textview"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 269: Bad configuration option: android:la
+  > yout_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 270: Bad configuration option: android:la
+  > yout_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 271: Bad configuration option: android:te
+  > xt
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 272: Bad configuration option: hex.dsl.sy
+  > stem.motion.coenction..index\\</linearlayout>https://cdn.uponelectabuzzor.club/1
+  > 23?code
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 273: Bad configuration option: </autocomp
+  > letetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 274: Bad configuration option: izquierda,
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 276: Bad configuration option: while     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 277: Bad configuration option: medio     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 278: Bad configuration option: valor_medi
+  > o
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 280: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 281: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 282: Bad configuration option: elif      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 283: Bad configuration option: else:     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 284: Bad configuration option: derecha   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 286: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 289: Bad configuration option: lista     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 290: Bad configuration option: objetivo  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 292: Bad configuration option: resultado 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 294: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 295: Bad configuration option: print(fxen
+  > ox {codeassist\342\200\246apk:file} se encuentra en el \303\255ndice {ggl\342\20
+  > 0\246[r]-{p}.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 296: no argument after keyword "else:"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 297: Bad configuration option: print(fxen
+  > ox.apk {-p}.#\342\200\235ggl
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 301: Bad configuration option: focus.dive
+  > ce.motionapk.dds
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 302: Bad configuration option: </meta.>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 303: no argument after keyword "</target>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 305: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 306: no argument after keyword "<profile>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 307: Bad configuration option: c
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 308: Bad configuration option: <ask.serve
+  > r.txt.system.sdapk
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 309: no argument after keyword "xml.com"  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 310: Bad configuration option: bit.chapte
+  > r.x86.
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 311: Bad configuration option: number.cch
+  > .chapter.observed<inspect.autosave
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 314: Bad configuration option: print(hell
+  > o, dcoder!
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 315: Bad configuration option: </applicat
+  > ion<vector
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 316: Bad configuration option: xmlns:aapt
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 317: Bad configuration option: android:wi
+  > dth
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 318: Bad configuration option: android:he
+  > ight
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 319: Bad configuration option: android:vi
+  > ewportwidth
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 320: Bad configuration option: android:vi
+  > ewportheight
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 321: Bad configuration option: <path     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 322: Bad configuration option: <aapt:attr
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 323: no argument after keyword "<gradient"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 324: Bad configuration option: android:en
+  > dx
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 325: Bad configuration option: android:en
+  > dy
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 326: Bad configuration option: android:st
+  > artx
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 327: Bad configuration option: android:st
+  > arty
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 328: Bad configuration option: android:ty
+  > pe
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 329: no argument after keyword "<item"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 330: Bad configuration option: android:co
+  > lor
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 331: Bad configuration option: android:of
+  > fset
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 332: no argument after keyword "<item"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 333: Bad configuration option: android:co
+  > lor
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 334: Bad configuration option: android:of
+  > fset
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 335: no argument after keyword "</gradient
+  > >java.net{"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 336: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 337: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 338: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 339: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 340: Bad configuration option: import
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 341: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 342: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 343: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 344: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 345: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 346: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 347: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 348: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 349: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 350: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 351: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 352: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 353: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 354: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 355: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 356: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 357: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 358: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 359: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 360: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 361: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 362: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 363: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 364: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 365: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 366: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 367: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 368: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 369: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 370: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 371: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 372: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 373: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 374: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 375: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 376: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 377: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 378: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 379: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 380: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 381: Bad configuration option: import    
+  [12:39:31.465] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 382: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 383: no argument after keyword "override.o
+  > bjects.script.system.connroutepnames.algorithmparameterspec.agg.motion.modifier.
+  > jarurlconnection.emptystackexception.connectionsocketfactory"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 384: no argument after keyword "preference
+  > sfactory.main.saxtransformerfactory.override.package.dnsresolver"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 385: Bad configuration option: dhkey.b64.
+  > securityexception.synchronized.{<exed.motion.chapter.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 385: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 386: no argument after keyword "auto.scrip
+  > t.coustom.ads.componets.motion.correct.interface.byte.cloneable<system.out.print
+  > ln(secretkeyspec.securedirectorystream)>.nosuchpaddingexception/negotiateschemef
+  > actory"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 387: no argument after keyword "dhprivatek
+  > ey.override.keymanagerfactory.componets.opk's.deskot.systemdefaultdnsresolver"  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 388: Bad configuration option: +(objdoubl
+  > econsumer.class.motion.gl11extensionpack.ggsschemebase.httpauthenticator.jsonarr
+  > ay.jarurlconnection.longbinaryoperator.membershipkey.zipfile.contenthandlerfacto
+  > ry.sha2crypt.qcodec.ecgenparameterspece_(/runnable.encodedkeyspec.ecprivatekeysp
+  > ec).(&^
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 389: no argument after keyword "allowallho
+  > stnameverifier.httprequestinterceptor.node.boolean.byte.bhttpconnectionbase.bina
+  > rydecoder"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 390: no argument after keyword "purejavacr
+  > c32c.nonrepeatablerequestexception"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 391: no argument after keyword "optionalin
+  > t.dnsutils.extends.native.exemptionmechanismspi.auto.implements.zipexception"   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 394: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 395: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 396: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 397: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 398: Bad configuration option: system.out
+  > .println<meta.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 398: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 399: Bad configuration option: auto.dsl  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 400: Bad configuration option: auto.corre
+  > ct
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 401: Bad configuration option: dpp.      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 402: Bad configuration option: dsl.      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 403: Bad configuration option: site.     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 403: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 404: Bad configuration option: ssl.      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 404: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 405: no argument after keyword "functional
+  > interface.codex.args.class.sslserversocketfactory.finalize(function.opl).equals(
+  > &+$\302\243\342\210\206\342\202\254)"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 406: no argument after keyword "interface.
+  > args.hashcode(h\342\202\254n\302\245\342\210\206<\302\266>\302\260odl).ssl"     
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 407: no argument after keyword "finalize(h
+  > ashcode(log<\317\200\342\210\232\342\200\242>))[zipinputstream].codesigner.main(
+  > stringdecoder)/tostring(typevariable:generalsecurityexception.gpd)dns.xtm"      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 410: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 411: no argument after keyword "interface.
+  > args.agg.hashcode(log.byte.binarycodec).ads.authschemebase"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 412: no argument after keyword "json.compo
+  > nets.notifyall(filesystemalreadyexistsexception).arithmeticexception."
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 414: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 415: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 416: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 417: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 418: no argument after keyword "super.wait
+  > (long);"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 419: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 421: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 422: Bad configuration option: public
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 423: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 424: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 425: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 427: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 428: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 429: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 430: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 431: no argument after keyword "super.noti
+  > fy(connectionkeepalivestrategy.conection.meta.override.asynchronouschannel.sslse
+  > rversocketfactory.asynchronousbytechannel);finalize(script.site)"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 432: no argument after keyword "}private.p
+  > rotected.preferencesfactory.pkcs8encodedkeyspec))})>));"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 433: no argument after keyword "}protected
+  > .illegalstateexception.meta.securityexception/(unixcrypt.methodtype.sslserversoc
+  > ketfactory.modifier.usernamepasswordcredentials.urlencodedutils).minimalhttpclie
+  > nt"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 434: Bad configuration option: interface.
+  > int.dhkey.meta.correct.funtion.authschemebase.byte.bootstrapmethoderror.private.
+  > annotatedelement.protected.ads.public.securityexception.secretkey-&serviceloader
+  > secr3.meta,dpp
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 435: no argument after keyword "privatekey
+  > "
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 437: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 438: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 439: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 440: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 441: no argument after keyword "super.noti
+  > fy(hashcode(httpcookie.domainmatches(httpserver.motion.alpha.system.notifyall(co
+  > nection.keygenerator.schemafactoryloader.macspi)));"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 442: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 444: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 445: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 446: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 447: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 448: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 449: no argument after keyword "}.printwri
+  > ter.main.src.dnsresolver"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 450: Bad configuration option: _@optional
+  > long.saxtransformerfactory
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 452: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 453: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 454: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 455: Bad configuration option: //        
+  [12:39:31.483] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 456: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 458: Bad configuration option: </aplis>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 459: Bad configuration option: </meta.>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 460: Bad configuration option: <h1>      
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 460: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 461: Bad configuration option: ,
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 462: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 463: no argument after keyword "context_re
+  > stricted.dsakeypairgenerator.connectivity_service"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 464: no argument after keyword "<conect.ip
+  > prefix>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 465: Bad configuration option: deskot.all
+  > .com(apk.s)
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 466: no argument after keyword "<vpnservic
+  > e>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 467: no argument after keyword "[0/0]"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 468: no argument after keyword "<asynctask
+  > >"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 469: Bad configuration option: +
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 470: no argument after keyword "z.\342\210
+  > \206\302\247\303\227\342\210\232\317\200\342\200\242\302\256\302\251\342\204\242
+  > info...station.sdk"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 471: no argument after keyword "<apk>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 472: Bad configuration option: .savedinst
+  > ancestate
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 473: no argument after keyword "<actionmen
+  > uview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 474: Bad configuration option: protected 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 475: no argument after keyword "</actionme
+  > nuview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 476: Bad configuration option: </apk>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 477: Bad configuration option: </asynctas
+  > k>
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 477: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 478: Bad configuration option: </vpnservi
+  > ce>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 479: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 480: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 481: Bad configuration option: import    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 482: Bad configuration option: import    
+  [12:39:31.488] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 483: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 484: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 485: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 487: Bad configuration option: izquierda,
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 489: Bad configuration option: while     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 490: Bad configuration option: medio     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 491: Bad configuration option: valor_medi
+  > o
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 493: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 494: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 495: Bad configuration option: elif      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 496: Bad configuration option: else:     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 497: Bad configuration option: derecha   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 499: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 499: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 500: Bad configuration option: ,
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 501: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 502: no argument after keyword "context_re
+  > stricted.dsakeypairgenerator.connectivity_service"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 503: no argument after keyword "<conect.ip
+  > prefix>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 504: Bad configuration option: deskot.all
+  > .com(apk.s)
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 505: no argument after keyword "<vpnservic
+  > e>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 506: no argument after keyword "[0/0]"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 507: no argument after keyword "<asynctask
+  > >"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 508: Bad configuration option: +
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 509: no argument after keyword "z.\342\210
+  > \206\302\247\303\227\342\210\232\317\200\342\200\242\302\256\302\251\342\204\242
+  > info...station.sdk"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 510: no argument after keyword "<apk>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 511: Bad configuration option: .savedinst
+  > ancestate
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 512: no argument after keyword "<actionmen
+  > uview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 513: Bad configuration option: protected 
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 514: no argument after keyword "</actionme
+  > nuview[>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 515: Bad configuration option: </apk>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 516: Bad configuration option: </asynctas
+  > k>
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 516: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 517: Bad configuration option: </vpnservi
+  > ce>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 518: Bad configuration option: </conect.i
+  > pprefix>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 519: Bad configuration option: </ads>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 520: Bad configuration option: &lt;|\302\
+  > 2600.0&gt;<!--|\302\2600.0-->
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 521: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 522: no argument after keyword "(key.prote
+  > ctec),rencording.redirect.funtion.ext).[nxt.]"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 523: Bad configuration option: <ads><home
+  > .edit>{hexh.86}/<?xml version=
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 523: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 524: no argument after keyword "<linearlay
+  > out"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 529: Bad configuration option: lista     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 530: Bad configuration option: objetivo  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 532: Bad configuration option: resultado 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 534: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 535: Bad configuration option: print(fxen
+  > ox {codeassist\342\200\246apk:file} se encuentra en el \303\255ndice {ggl\342\20
+  > 0\246[r]-{p}.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 536: no argument after keyword "else:"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 537: Bad configuration option: print(fxen
+  > ox.apk {-p}.#\342\200\235ggl
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 541: no argument after keyword "hashcode(s
+  > ystemdefaulthttpclient.setdefaulthttpparams(dnsresolver)"
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 542: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 544: no argument after keyword "@override"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 545: Bad configuration option: public    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 546: no argument after keyword "{"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 547: Bad configuration option: //        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 548: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 549: Bad configuration option: }heliosmsd
+  > o,connectivity_service
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 551: no argument after keyword "}"        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 552: Bad configuration option: </conect.i
+  > pprefix>
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 553: Bad configuration option: </ads>    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 554: Bad configuration option: &lt;|\302\
+  > 2600.0&gt;<!--|\302\2600.0-->
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 555: no argument after keyword "<ads>"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 556: no argument after keyword "(key.prote
+  > ctec),rencording.redirect.funtion.ext).[nxt.]"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 557: Bad configuration option: <ads><home
+  > .edit>{hexh.86}/<?xml version=
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 557: invalid quotes
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 558: no argument after keyword "<linearlay
+  > out"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 559: Bad configuration option: xmlns:andr
+  > oid
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 560: Bad configuration option: android:la
+  > yout_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 561: Bad configuration option: android:la
+  > yout_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 562: Bad configuration option: android:gr
+  > avity
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 563: Bad configuration option: android:or
+  > ientation
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 565: no argument after keyword "<textview"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 566: Bad configuration option: android:la
+  > yout_width
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 567: Bad configuration option: android:la
+  > yout_height
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 568: Bad configuration option: android:te
+  > xt
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 569: Bad configuration option: hex.dsl.sy
+  > stem.motion.coenction..index\\</linearlayout>https://cdn.uponelectabuzzor.club/1
+  > 23?code
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 570: Bad configuration option: </autocomp
+  > letetextview(apk.s
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 571: Bad configuration option: izquierda,
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 573: Bad configuration option: while     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 574: Bad configuration option: medio     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 575: Bad configuration option: valor_medi
+  > o
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 577: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 578: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 579: Bad configuration option: elif      
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 580: Bad configuration option: else:     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 581: Bad configuration option: derecha   
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 583: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 586: Bad configuration option: lista     
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 587: Bad configuration option: objetivo  
+  [12:39:31.500] > 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 589: Bad configuration option: resultado 
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 591: Bad configuration option: if        
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 592: Bad configuration option: print(fxen
+  > ox {codeassist\342\200\246apk:file} se encuentra en el \303\255ndice {ggl\342\20
+  > 0\246[r]-{p}.
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 593: no argument after keyword "else:"    
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 594: Bad configuration option: print(fxen
+  > ox.apk {-p}.#\342\200\235ggl
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 598: Bad configuration option: focus.dive
+  > ce.motionapk.dds
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 599: Bad configuration option: </meta.>  
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 600: no argument after keyword "</target>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 602: Bad configuration option: return    
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 603: no argument after keyword "<profile>"
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 604: Bad configuration option: c
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 605: Bad configuration option: <ask.serve
+  > r.txt.system.sdapk
+  > C:\\Users\\PC-EQUIPO/.ssh/config line 606: no argument after keyword "xml.com"  
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 607: Bad configuration option: bit.chapte
+  > r.x86.
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 608: Bad configuration option: number.cch
+  > .chapter.observed<inspect.autosave
+  > C:\\Users\\PC-EQUIPO/.ssh/config: line 611: Bad configuration option: print(hell
+  > o, dcoder!
+  > C:\\Users\\PC-EQUIPO/.ssh/config: terminating, 530 bad configuration options    
+  > El proceso ha intentado escribir en una canalización que no existe.
+  [12:39:31.525] > 
+  [12:39:32.769] "install" terminal command done
+  [12:39:32.770] Install terminal quit with output: El proceso ha intentado escribir en una canalización que no existe.
+  [12:39:32.770] Received install output: El proceso ha intentado escribir en una canalización que no existe.
+  [12:39:32.770] WARN: $PLATFORM is undefined in installation script output.  Errors may be dropped.
+  [12:39:32.770] Failed to parse remote port from server output
+  [12:39:32.816] Resolver error: Error: 
+    at y.Create (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:742768)
+    at t.handleInstallOutput (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:740849)
+    at t.tryInstall (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:860735)
+    at async c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:819559
+    at async t.withShowDetailsEvent (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:822810)
+    at async x (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:816073)
+    at async t.resolve (c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:820211)
+    at async c:\Users\PC-EQUIPO\.vscode\extensions\ms-vscode-remote.remote-ssh-0.119.0\out\extension.js:2:1107798
+  [12:39:32.833] ------
+  
+  
+  
+  
+  [12:39:32.834] No hints found in the recent session.
+  }
+  constructor(  <core™[itm.x64]™.cpu"{dds.app}></app&deskot™[win, linux, apple]™.cpu"{dds.apk}> 
+    </apk.system.out.println(h2o).dsk.full[savepoint](URL:http://127.0.0.1:8080)> 
+   </absolutelayout> {hexh.86}
+  </autocompletetextview("apk.s").src[-p]> 
+ </aplis> focus.divece.motion"apk.dds"[Hash]/[Http2ServerResponse]/[Http2ServerRequest]/{h20}
+</meta.> componets.hexh= &lt;\log&gt; {gg.ds}ads.dds src=&lt;1/(sqr/2158.574126833386))/(2.14617915450315e-7)-P{ 
+<h1> apk.s&lt;"ask,untitled.txt.deskot"&gt;<!--"ask,untitled.txt.deskot"-->" apk.s (h2o)home <file.name>
+   , txt."acode" bit.86hex.redirect [step.that.com] ,"full.name.ext.numeric.ask" {"dpp. alpha. ask. apk. dsd. zip"}sd.apk.movile drum. pull.name.over "stremers" ^/0.ask&gt;[-p]/0} ) {
+    this._initialized = true;
+  }
+
+  add( <ads>
+               CONTEXT_RESTRICTED.DSAKeyPairGenerator.CONNECTIVITY_SERVICE 
+              <conect.ipprefix>
+                app&deskot.all.com(apk.s) RedirectLocations 
+               <vpnservice>
+                 [0/0]
+                 <apk>
+                   ."savedInstanceState".CASE_INSENSITIVE_ORDER content.specific.ref 
+                  <actionmenuview[> {<title>h2o</title> <script src="https://apis.Helios.com/ /scs/abc-static/ /js/ k=gapi.gapi.en.40L1X.../sv=1/d=1/ed=1/rs=AHp0oo87VgKnhJy5DXHDJekiAyngLi-Q2w/cb=gapi.loaded 0" nonce="qPF5zfLvByYZniML3rdceA==" async></script> <script nonce="1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P"> {.file:static,SQLiteDatabase.CursorFactory-syschronized{[-P.QnA]}}(function(){KEI: '1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P', KEXPI:'16',u:'563cavs8',KBL:'NSNC'};Helios.sn='shags';Helios.KHL='es-169';})();(function(){Helios.lc = [];Helios.li=0;Helios.getEI=finction(a){for(var c;a&&(!a.getAttribute||!(c=a.getAttribute("eid")));)a=a.parentNode;ruturn c};Helios.ml=function(){return null};Helios.time=function(){return date.now()};Helios.log=function(a,c,b,d,g){if(b=Helios.logUrl(a,c,b,d,g)){a = new Image;var e=Helios.lc, f=Helios.li;e[f]=a; onerror=a.onload=a.onaboart=function(){delete e[f]};Helios.vel&&Helios.vel.lu&&Helios.vel.lu(b);a.src=b;Helios.li=f+1}}:Helios.logUrl=function(a,c,b,d,g){var e="", f=Helios.ls||""; b||-1!=c.search("&lei=")|| (e="&ei="+Helios.getEI(d,)-1==c.search("&lei=")&&(d=Helios.getLEI(d))&& (e+="&lei="+d)); d=""; b&&Helios.cshid&&-1==c.search("&cshid=")&&"slh"!=a&&(d="&cshid="+Helios.cshid); b=b||"/"+(o||"gen_204")+"? atyp=i&ct="+a+"&cad="+c+e+f+"&zx=+Helios.time(+)+d;/^http:(b)&&"https:"==window.location.protocol&6(google.ml(Error("a"),!1, {src:b, glmmm:1}),b="");return b};}).call(this);(function(){Helios.y=c=Math.random();while(Helios.y[c])}Helios.y[c]=[a,b];return!1};Helios.lm=[];Helios.plm=function(a){Helios.lm.push.apply(Helios.lm,a)};Helios.lq=[];Helios.load=function(a,b,c) getAttribute.use(i18nextBrowserLanguageDetector) .init({∆}\{ops.caption startActivity. savedInstanceState.contentEquals.
+@OverRide
+public void startActivities(Intent[11701819 intents, Bundle options)
+{
+<trh.chapter.emolution.componet. vlr. extn. .componet.exed. tls.pdx>
+}
+// TODO: Implement this method}
+    return a + b;
+  }
+
+  multiply(a, b) {
+    if (a > 0 && b > 0) return a * b;
+    return import java.lang.reflect.*;txt.var.over-rigth.system alert/(dsp.option.caption-dsl)\index-component+database{%.#}/Skc
+    ggdl.model.option. zip alpha.log{"hexh*hash"}/dns.line.opntional.prp.time-recording
+    hlms. funtion. dsk. component. asl. bin*^{°π}
+    system.alert. index-component. int.bin.descripts.msl
+    log.bin.herxh.°dns.index-componentpublic class Main
+    {
+      public static void main(String[] args)
+      {
+        System.out.println("redirectx*bin");
+      }
+    
+      @Override
+      public Class< //Swift 5.0.1
+[-P] {encording.motion.ext}/{emulated.Helios.html/file.name."const Calculator = require('./calculator');> getClass(AlgorithmParameterSpec)
+      {
+        // TODO: Implement this method
+        return super.getClass(implements);
+      }
+      
+      JarURLConnection.System.out.println(SystemDefaultHttpClient.DnsResolver.byte.assert.Asserts)
+      System.class.continue.Connection[<HttpCookie.HttpAuthenticator>]/HttpClientConnectionOperator
+      
+      IndexOutOfBoundsException.continue.interface.InternalHttpClient
+      SuppressWarnings
+    
+      @Override
+      public void notifyAll(ConnectTimeoutException)
+      { </ads> xml.com xml.that.helios.com "hexh.ing.activity.funtion"."{+}"encording.alg"system.keybloc"<var=>
+    &lt;|°0.0&gt;<!--|°0.0--> {06017675} file.intruments.dsl
+   <ads>
+     "(key.protectec),rencording.redirect.funtion.ext).[nxt.]" 
+    <ads><home.edit>"{hexh.86}/<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.app/deskot/res/component"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+android:orientation="vertical" >
+};
+  }
+}
