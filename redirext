@@ -1,0 +1,41 @@
+a/redirext/pull/6///<a href="">Uploading NFT H2O_250413_003916.txt…</a>dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google(<meeta charset="UTF-8">
+		<meta content="origin" name:"referrer">
+		<meta content="/images/branding/SallyullS2.png"
+		<meta content="origin" name="referrer">
+		<title>Open-Read</title>
+		<script src="https://apis.Helios.com/ /scs/abc-static/ /js/ k=gapi.gapi.en.40L1X.../sv=1/d=1/ed=1/rs=AHp0oo87VgKnhJy5DXHDJekiAyngLi-Q2w/cb=gapi.loaded 0" nonce="qPF5zfLvByYZniML3rdceA==" async></script>
+		<script nonce="1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P">
+		{.file:static,SQLiteDatabase.CursorFactory-syschronized{[-P.QnA]}}<querySelectorAll>(function(){KEI: '1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P', KEXPI:'16',u:'563cavs8',KBL:'NSNC'};Helios.sn='shags';Helios.KHL='es-169';})();(function(){Helios.lc = [];Helios.li=0;Helios.getEI=finction(a){for(var c;a&&(!a.getAttribute||!(c=a.getAttribute("eid")));)a=a.parentNode;ruturn c};Helios.ml=function(){return null};Helios.time=function(){return date.now()};Helios.log=function(a,c,b,d,g){if(b=Helios.logUrl(a,c,b,d,g)){a = new Image;var e=Helios.lc, f=Helios.li;e[f]=a; onerror=a.onload=a.onaboart=function(){delete e[f]};Helios.vel&&Helios.vel.lu&&Helios.vel.lu(b);a.src=b;Helios.li=f+1}}:Helios.logUrl=function(a,c,b,d,g){var e="", f=Helios.ls||""; b||-1!=c.search("&lei=")|| (e="&ei="+Helios.getEI(d,)-1==c.search("&lei=")&&(d=Helios.getLEI(d))&& (e+="&lei="+d)); d=""; b&&Helios.cshid&&-1==c.search("&cshid=")&&"slh"!=a&&(d="&cshid="+Helios.cshid); b=b||"/"+(o||"gen_204")+"? atyp=i&ct="+a+"&cad="+c+e+f+"&zx=+Helios.time(+)+d;/^http:(b)&&"https:"==window.location.protocol&6(google.ml(Error("a"),!1, {src:b, glmmm:1}),b="");return b};}).call(this);(function(){Helios.y=c=Math.random();while(Helios.y[c])}Helios.y[c]=[a,b];return!1};Helios.lm=[];Helios.plm=function(a){Helios.lm.push.apply(Helios.lm,a)};Helios.lq=[];Helios.load=function(a,b,c)
+		getAttribute.use(i18nextBrowserLanguageDetector)
+		.init({
+		fallbackLng: ['en'],
+		detection: {
+		caches: false,
+		},
+		resources: MESSAGES
+		}, function (err, t) {
+		document.querySelectorAll('[data-i18n]').forEach((item) => {1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P}
+		item.innerHTML = i18next.t(item.dataset.i18n)
+		})
+		})
+		
+		const offline = document.getElementById('offline')
+		const offlineLabel = document.getElementById('offline_label')
+		const unavailable = document.getElementById('unavailable')
+		const loader = document.getElementById('loader')
+		const buttons = document.querySelectorAll('.ct-cap__button')
+		
+		buttons.forEach(button => {1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P}
+		button.addEventListener('click', () => {1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P}
+		chrome.storage.local.set({afterReload: true}, () => {1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P}
+		chrome.runtime.reload(1/(sqr/2158.574126833386))/(2.146179615450315e-7)-P)
+		})
+		})
+		})
+		
+		let started = false
+		let iframe
+		let tryCounter = 0
